@@ -1,0 +1,365 @@
+@charset "UTF-8";
+
+/*--------------------------
+全体の設定
+---------------------------*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 100%;
+}
+body {
+    margin: 0;
+    color: #707070;
+    font-family: sans-serif;
+    background-color: #ffffff;
+}
+
+/*--------------------------
+ヘッダー
+---------------------------*/
+#header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-bottom: 3px solid #4a5fc1;
+}
+#header .logo {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+#header .logo a {
+    color: #4a5fc1;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+#header .navi .menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+}
+#header .navi .menu li {
+    margin-left: 40px;
+    font-size: 17px;
+}
+#header .navi li a {
+    color: #4a5fc1;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* ロゴ・ナビ：ホバーで少し透明に */
+#header .logo a,
+#header .navi li a {
+    transition: opacity 0.3s;
+}
+#header .logo a:hover,
+#header .navi li a:hover {
+    opacity: 0.6;
+}
+/* ハンバーガー：PCでは隠す */
+.hambuger {
+    display: none;
+}
+
+/*--------------------------
+メインビジュアル
+---------------------------*/
+.mainvisual {
+    height: 500px;
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+}
+.mainvisual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 70%;
+}
+.mainvisual .wave {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 110px;
+    display: block;
+}
+.mainvisual-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    line-height: 1.4;
+}
+.mainvisual-text h2 {
+    margin: 0;
+    font-size: 60px;
+}
+.mainvisual-text p {
+    margin: 8px 0 0;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+}
+
+/*--------------------------
+トップページのコンテンツ
+---------------------------*/
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+.guide {
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    background: #f7f7f7;
+    border-radius: 12px;
+}
+.guide h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    color: #4a5fc1;
+}
+.guide p {
+    margin: 0 0 20px;
+}
+
+/*--------------------------
+共通ボタン
+---------------------------*/
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #4a5fc1;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.btn-sub {
+    background: #ffffff;
+    color: #4a5fc1;
+    border: 2px solid #4a5fc1;
+}
+
+/*--------------------------
+下層ページ共通
+---------------------------*/
+.subpage main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+.page-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.page-title h2 {
+    margin: 0;
+    font-size: 32px;
+    color: #4a5fc1;
+}
+.page-title p {
+    margin: 4px 0 0;
+    font-size: 14px;
+}
+
+/* 自己紹介（写真左・文章右） */
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.intro-photo {
+    flex-shrink: 0;
+    width: 200px;
+}
+.intro-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.intro-text h3 {
+    margin-top: 0;
+}
+.intro-text .catch {
+    color: #4a5fc1;
+    font-weight: bold;
+}
+
+/* スキル */
+.skills {
+    margin-bottom: 50px;
+}
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding-left: 0;
+}
+.skill-list li {
+    padding: 8px 16px;
+    background: #f0f2fb;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* 好きなもの */
+.favorites {
+    margin-bottom: 50px;
+}
+.favorite-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.favorite-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    margin-bottom: 12px;
+    background: #f7f7f7;
+    border-radius: 8px;
+}
+.favorite-thumb {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.favorite-body h4 {
+    margin: 0 0 4px;
+}
+.favorite-body p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* 次への導線 */
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+/*--------------------------
+フッター
+---------------------------*/
+#footer {
+    padding: 30px 20px;
+    background: #f7f7f7;
+    text-align: center;
+    font-size: 13px;
+}
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 16px;
+}
+.footer-menu a {
+    color: #4a5fc1;
+    text-decoration: none;
+}
+.footer-menu a:hover {
+    opacity: 0.6;
+}
+
+/*--------------------------
+スマートフォン
+---------------------------*/
+@media screen and (max-width: 767px) {
+    #header {
+        height: 60px;
+    }
+    .mainvisual {
+        height: 40vh;
+    }
+    .mainvisual .wave {
+        height: 50px;
+    }
+    .mainvisual-text h2 {
+        font-size: 40px;
+    }
+    .mainvisual-text p {
+        font-size: 14px;
+    }
+
+    /* ナビをハンバーガー開閉式に */
+    #header .navi {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+    }
+    #header .navi.open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    #header .navi .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #header .navi .menu li {
+        margin: 0;
+        padding: 14px 20px;
+        width: 100%;
+    }
+    .hambuger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 6px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .hambuger span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: #4a5fc1;
+        border-radius: 2px;
+    }
+
+    /* 下層ページ */
+    .subpage main {
+        padding: 30px 16px;
+    }
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+    .links {
+        flex-direction: column;
+    }
+}
