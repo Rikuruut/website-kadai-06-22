@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #4a5fc1;
+    box-shadow: 0 0 0 3px rgba(74, 95, 193, 0.15);
+}
+input[type="email"] {
+    background-image: url('data:image/svg+xml;utf8,...');
+}
+input[type="text"],
+input[type="email"] {
+    background-color: #fafafa;
+}
+
+@media screen and (max-width: 767px) {
+    .contact-form .btn {
+        width: 100%;
+        text-align: center;
+    }
+}

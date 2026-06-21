@@ -1,106 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile｜日高陸</title>
-    <meta name="description" content="日高陸のプロフィール">
+    <meta name="description" content="日高陸のプロフィール" />
     <script src="js/script.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/works.css" />
+  </head>
 
-<body class="subpage">
+  <body class="subpage">
     <header id="header">
-        <h1 class="logo"><a href="index.html">R.H.</a></h1>
-        <div class="hambuger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <nav class="navi">
-            <ul class="menu">
-                <li><a href="index.html">トップ</a></li>
-                <li><a href="profile.html">プロフィール</a></li>
-                <li><a href="works.html">成果物</a></li>
-                <li><a href="">お問い合わせ</a></li>
-            </ul>
-        </nav>
+      <h1 class="logo"><a href="index.html">R.H.</a></h1>
+      <div class="hambuger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="navi">
+        <ul class="menu">
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="profile.html">プロフィール</a></li>
+          <li><a href="works.html">成果物</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <!-- ページ見出し -->
-        <section class="page-title">
-            <h2>Works</h2>
-            <p>成果物</p>
-        </section>
+      <!-- ページ見出し -->
+      <section class="page-title">
+        <h2>Works</h2>
+        <p>成果物</p>
+      </section>
 
-        <section class="works-lead">
-            <p>アプリコンテストへの参加をきっかけに、タイマーアプリを制作しました。<br>
-                現在はその経験をもとに、UIや体験設計を見直した新しいRanbit（タイマーアプリ）を開発しています。</p>
-        </section>
+      <section class="work-intro">
+        <h3>Ranbit について</h3>
+        <p class="work-catch">物足りないから、またやりたくなる。</p>
+        <p>
+          Ranbitという名前は「Random（ランダム）」と「Habit（習慣）」を組み合わせた造語です。<br />
+          作業のタイマーって、残り時間が見えると逆に気になって集中できなかったり、何かを習慣にしようとしても続かなかったり……そんな経験から生まれたアプリです。<br />
+          終了時間をあえてランダムにすることで、時間を気にしすぎず、自然と「またやりたくなる」感覚をつくるタイマーアプリを目指しています。
+        </p>
+      </section>
 
-        <!-- 旧Ranbit（経験として） -->
-        <section class="work-card work-card-sub">
-            <div class="work-badge work-badge-sub">アプリコンテスト出展作</div>
-            <div class="work-body">
-                <img src="img/ranbit-old-screenshot.png" alt="旧Ranbitのスクリーンショット" class="work-screenshot-sub">
-                <div class="work-text">
-                    <h3>旧 Ranbit</h3>
-                    <p class="work-comment">アプリコンテストに向けて制作した、アプリ「Ranbit」です。
-                    「まずはアプリとして動くものを完成させる」ことを目標に、タイマー機能や画面構成を実装しました。制作を通して、機能だけでなく、見た目の分かりやすさや「また使いたい」と思える体験づくりの大切さを学びました。
-                    </p>
-                    <ul class="work-tags">
-                        <li>Android Studio</li>
-                        <li>Flutter</li>
-                    </ul>
-                    <a href="https://ranbit-project.web.app/" class="link-text" target="_blank"
-                        rel="noopener">旧Ranbitを実際に見る →</a>
-                </div>
-            </div>
-        </section>
+      <!-- 旧Ranbit（経験として） -->
+      <section class="work-card work-card-sub">
+        <div class="work-badge work-badge-sub">アプリコンテスト出展作</div>
+        <div class="work-body">
+          <img
+            src="img/ranbit-old-screenshot.png"
+            alt="旧Ranbitのスクリーンショット"
+            class="work-screenshot-sub"
+          />
+          <div class="work-text">
+            <h3>旧 Ranbit</h3>
+            <p class="work-comment">
+              アプリコンテストに向けて制作した、アプリ「Ranbit」です。
+              「まずはアプリとして動くものを完成させる」ことを目標に、タイマー機能や画面構成を実装しました。制作を通して、機能だけでなく、見た目の分かりやすさや「また使いたい」と思える体験づくりの大切さを学びました。
+            </p>
+            <ul class="work-tags">
+              <li>Android Studio</li>
+              <li>Flutter</li>
+            </ul>
+            <a
+              href="https://ranbit-project.web.app/"
+              class="link-text"
+              target="_blank"
+              rel="noopener"
+              >旧Ranbitを実際に見る →</a
+            >
+            <p class="note">
+              ※このアプリはスマートフォン向けに制作しています。
+              PCで閲覧する場合は、ブラウザの検証ツールなどでスマートフォンサイズに切り替えて遊んでみてください。
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <div class="evolution-arrow">↓ 進化</div>
+      <div class="evolution-arrow">↓ 進化</div>
 
-        <!-- 新Ranbit（主役） -->
-        <section class="work-card work-card-main">
-            <div class="work-badge">開発中</div>
-            <div class="work-body">
-                <img src="img/ranbit-new-screenshot.png" alt="新Ranbitのスクリーンショット" class="work-screenshot-sub">
-                <div class="work-text">
-                    <h3>新 Ranbit</h3>
-                    <p class="work-comment">旧版で見えた課題をふまえて、世界観から作り直し中。今度は「ただのタイマー」じゃなく、毎日開きたくなるアプリを目指してます。</p>
-                    <ul class="work-tags">
-                        <li>React Native</li>
-                        <li>Expo</li>
-                        <li>TypeScript</li>
-                    </ul>
-                    <ul class="work-list">
-                        <li>旧版の反省をもとに再設計中</li>
-                        <li>ランダム終了タイマー</li>
-                        <li>うさぎキャラクター、癒やし系UI</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+      <!-- 新Ranbit（主役） -->
+      <section class="work-card work-card-main">
+        <div class="work-badge">開発中</div>
+        <div class="work-body">
+          <img
+            src="img/ranbit-new-screenshot.png"
+            alt="新Ranbitのスクリーンショット"
+            class="work-screenshot-sub"
+          />
+          <div class="work-text">
+            <h3>新 Ranbit</h3>
+            <p class="work-comment">
+              旧版で見えた課題をふまえて、世界観から作り直し中。今度は「ただのタイマー」じゃなく、毎日開きたくなるアプリを目指してます。
+            </p>
+            <ul class="work-tags">
+              <li>React Native</li>
+              <li>Expo</li>
+              <li>TypeScript</li>
+            </ul>
+            <ul class="work-list">
+              <li>旧版の反省をもとに再設計中</li>
+              <li>市場リリースを検討中</li>
+              <li>うさぎキャラクター、癒やし系UIを重視</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-        <!-- 次への導線 -->
-        <section class="links">
-            <a href="profile.html" class="btn-sub">プロフィールへ戻る →</a>
-            <a href="contact.html" class="btn btn">お問い合わせ →</a>
-        </section>
+      <section class="work-compare">
+        <h3>旧Ranbit と 新Ranbit の違い</h3>
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>旧 Ranbit</th>
+              <th>新 Ranbit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>使用技術</td>
+              <td>Android Studio / Flutter</td>
+              <td>React Native / Expo / TypeScript</td>
+            </tr>
+            <tr>
+              <td>世界観</td>
+              <td>シンプル</td>
+              <td>うさぎキャラクター・癒やし系UI</td>
+            </tr>
+            <tr>
+              <td>状態</td>
+              <td>アプリコンテスト出展済み</td>
+              <td>開発中</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 次への導線 -->
+      <section class="links">
+        <a href="profile.html" class="btn btn-sub">プロフィールへ戻る →</a>
+        <a href="contact.html" class="btn">お問い合わせ →</a>
+      </section>
     </main>
 
     <footer id="footer">
-        <ul class="footer-menu">
-            <li><a href="index.html">トップ</a></li>
-            <li><a href="profile.html">プロフィール</a></li>
-            <li><a href="works.html">成果物</a></li>
-            <li><a href="contact.html">お問い合わせ</a></li>
-        </ul>
-        <p>&copy; 2026 Riku Hidaka</p>
+      <ul class="footer-menu">
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="profile.html">プロフィール</a></li>
+        <li><a href="works.html">成果物</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+      <p>&copy; 2026 Riku Hidaka</p>
     </footer>
-</body>
-
+  </body>
 </html>

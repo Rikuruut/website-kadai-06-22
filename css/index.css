@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+/*--------------------------
+メインビジュアル
+---------------------------*/
+.mainvisual {
+    height: 500px;
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+}
+.mainvisual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 70%;
+}
+.mainvisual .wave {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 110px;
+    display: block;
+}
+.mainvisual-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    line-height: 1.4;
+}
+.mainvisual-text h2 {
+    margin: 0;
+    font-size: 60px;
+}
+.mainvisual-text p {
+    margin: 8px 0 0;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+}
+
+/*--------------------------
+トップページのコンテンツ
+---------------------------*/
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+.guide {
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    background: #f7f7f7;
+    border-radius: 12px;
+}
+.guide h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    color: #4a5fc1;
+}
+.guide p {
+    margin: 0 0 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .mainvisual {
+        height: clamp(280px, 40vh, 400px);
+    }
+    .mainvisual .wave {
+        height: 50px;
+    }
+    .mainvisual-text {
+        width: calc(100% - 32px);
+    }
+    .mainvisual-text h2 {
+        font-size: clamp(36px, 11vw, 48px);
+    }
+    .mainvisual-text p {
+        font-size: 14px;
+    }
+    .container {
+        padding: 40px 16px;
+    }
+    .guide {
+        padding: 32px 16px;
+    }
+}
