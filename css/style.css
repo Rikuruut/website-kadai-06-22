@@ -289,6 +289,127 @@ body {
 }
 
 /*--------------------------
+成果物（Works）
+---------------------------*/
+
+.works-lead {
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+.work-card {
+    position: relative;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 16px;
+}
+.work-card-main {
+    background: #f0f2fb;
+    border: 2px solid #4a5fc1;
+}
+.work-card-sub {
+    background: #f7f7f7;
+}
+
+.work-badge {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    background: #4a5fc1;
+    color: #ffffff;
+}
+.work-badge-sub {
+    background: #d9d9d9;
+    color: #707070;
+}
+
+.work-body {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+.work-icon {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+.work-text {
+    flex: 1;
+}
+.work-text h3 {
+    margin: 0 0 10px;
+}
+.work-comment {
+    margin: 0 0 16px;
+    line-height: 1.7;
+}
+
+.work-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 14px;
+}
+.work-tags li {
+    background: #ffffff;
+    border: 1px solid #4a5fc1;
+    color: #4a5fc1;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.work-list {
+    margin: 0;
+    padding-left: 20px;
+}
+.work-list li {
+    margin-bottom: 6px;
+}
+
+.work-screenshot {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 12px;
+    margin-top: 20px;
+    display: block;
+}
+.work-screenshot-sub {
+    flex-shrink: 0;
+    width: 140px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.evolution-arrow {
+    text-align: center;
+    color: #4a5fc1;
+    font-weight: bold;
+    margin: 8px 0 24px;
+}
+
+.link-text {
+    display: inline-block;
+    margin-top: 12px;
+    color: #4a5fc1;
+    font-weight: bold;
+    text-decoration: none;
+}
+.link-text:hover {
+    opacity: 0.6;
+}
+
+
+
+
+/*--------------------------
 スマートフォン
 ---------------------------*/
 @media screen and (max-width: 767px) {
